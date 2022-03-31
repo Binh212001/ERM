@@ -1,21 +1,16 @@
 import { Layout } from "antd";
 import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import "./App.css";
+
 import SideBar from "./component/SideBar";
 import routes from "./routers/route";
-const { Header, Content } = Layout;
+import Header from "./component/Header";
+const { Content } = Layout;
 
 function App() {
   return (
     <BrowserRouter>
-      <Layout
-        hasSider
-        style={{
-          posision: "relative",
-          height: "100vh",
-        }}
-      >
+      <Layout hasSider style={{ background: "#fff" }}>
         <SideBar />
         <Layout
           className="site-layout"
@@ -26,9 +21,7 @@ function App() {
             overflow: "scroll",
           }}
         >
-          <Header className="site-layout-background" style={{ padding: 0 }}>
-            Header
-          </Header>
+          <Header />
           <Content
             style={{
               overflow: "initial",

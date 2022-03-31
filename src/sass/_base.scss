@@ -10,19 +10,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #365571;
+  color: #0f1d29;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent;
+}
 .active {
   background-color: #52acff;
   color: #fff;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 .flex {
   display: flex;

@@ -1,16 +1,16 @@
-import React from "react";
 import {
+  AndroidOutlined,
+  AppleOutlined,
+  DownCircleOutlined,
   HomeOutlined,
   ShoppingCartOutlined,
-  AppleOutlined,
-  AndroidOutlined,
+  ShrinkOutlined,
   UserOutlined,
   UserSwitchOutlined,
-  DownCircleOutlined,
-  ShrinkOutlined,
 } from "@ant-design/icons";
+import { Avatar, Layout } from "antd";
+import React from "react";
 import CustomLink from "./CustomLink";
-import { Layout, Menu } from "antd";
 
 const link = [
   {
@@ -65,19 +65,32 @@ function SideBar() {
         position: "fixed",
         left: 0,
         top: 0,
+        padding: "10px 0",
         bottom: 0,
         zIndex: 100,
         boxShadow: "1px 1px 7px",
+        background: "#fff",
       }}
     >
-      <div className="logo" />
-      <Menu theme="light" mode="inline" defaultSelectedKeys={["4"]}>
+      <Avatar
+        style={{
+          display: "block",
+          textAlign: "center",
+          cursor: "pointer",
+          margin: "auto",
+        }}
+        size="large"
+        shape="square"
+      >
+        Company
+      </Avatar>
+      <ul className="nav_list">
         {link.map((link, index) => (
-          <CustomLink key={index} to={link.to} icon={link.icon}>
+          <CustomLink key={index} index={index} to={link.to} icon={link.icon}>
             {link.name}
           </CustomLink>
         ))}
-      </Menu>
+      </ul>
     </Sider>
   );
 }

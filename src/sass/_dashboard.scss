@@ -1,0 +1,26 @@
+.inf__list__item::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: -15%;
+  top: 40%;
+  transform: scale(2);
+  transition: transform 0.8 ease-in;
+}
+.inf__list__item {
+  transition: transform 0.8 ease-in;
+  overflow: hidden;
+  position: relative;
+  &:hover::before {
+    transition: transform 0.8 ease-in;
+
+    transform: scale(6);
+
+    border: 50px solid rgb(40, 73, 218);
+    background-color: rgb(50, 47, 224);
+  }
+}
+
+.inf__list:hover {
+  color: #fff;
+}
