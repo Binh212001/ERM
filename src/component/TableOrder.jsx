@@ -1,4 +1,5 @@
 import { Table, Tag, Typography } from "antd";
+import dayjs from "dayjs";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getOrder } from "../redux/OrderSlice";
@@ -24,6 +25,7 @@ function TableOrder() {
       title: "Date",
       dataIndex: "date",
       key: "date",
+      render: (text) => <div>{parseInt(text)}</div>,
     },
     {
       title: " Status",

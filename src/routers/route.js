@@ -1,6 +1,6 @@
 import Analytics from "../pages/Analytics";
 import Categories from "../pages/Categories";
-import Costomer from "../pages/Costomer";
+import Customer from "../pages/Customer";
 import DashBoard from "../pages/DashBoard";
 import Discount from "../pages/Discount";
 import Inventory from "../pages/Inventory";
@@ -23,7 +23,7 @@ const routes = [
   },
   {
     path: "/costomer",
-    element: <Costomer />,
+    element: <Customer />,
   },
   {
     path: "/analytics",

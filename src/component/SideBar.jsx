@@ -19,6 +19,11 @@ const link = [
     icon: <HomeOutlined />,
   },
   {
+    to: "costomer",
+    name: "Costomer",
+    icon: <UserOutlined />,
+  },
+  {
     to: "/order",
     name: "Oder",
     icon: <ShoppingCartOutlined />,
@@ -33,11 +38,7 @@ const link = [
     name: "Categories",
     icon: <AndroidOutlined />,
   },
-  {
-    to: "costomer",
-    name: "Costomer",
-    icon: <UserOutlined />,
-  },
+
   {
     to: "/analytics",
     name: "Analytics",

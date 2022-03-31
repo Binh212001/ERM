@@ -1,0 +1,30 @@
+.customer {
+  &__add {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__from {
+    overflow: hidden;
+    position: relative;
+
+    &__list {
+      padding: 20px;
+      animation: alternate;
+      animation: from 1000;
+      &__close {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+@keyframes form {
+  form {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
